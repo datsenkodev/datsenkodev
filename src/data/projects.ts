@@ -25,7 +25,7 @@ export const projects: Project[] = [
 		id: '01',
 		title: 'Traxtio',
 		description:
-			'A custom CRM for lead management, designed and developed from scratch to production across both frontend and backend, with Trello API integration at the core of the workflow.',
+			'A custom CRM for lead management, developed on my own from scratch to production across both frontend and backend, with Trello API integration at the core of the workflow.',
 		year: '2025-2026',
 		category: 'CRM · Frontend · Backend',
 		stack: ['Next.js', 'Nest.js', 'TypeScript', 'Trello API'],

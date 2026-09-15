@@ -8,7 +8,7 @@ export const site = {
 	about:
 		'I’m a frontend engineer focused on building digital products that are clear, fast, and built to last. I work across UI, architecture, performance, and the details that turn a good interface into a great one.',
 	location: 'Ukraine · working worldwide',
-	availability: 'Available for selected projects',
+	availability: 'Open to freelance and full-time opportunities',
 	email: 'datsenkodev@gmail.com',
 	url: 'https://example.com',
 	nav: [

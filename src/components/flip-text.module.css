@@ -22,7 +22,6 @@
   transition-delay: var(--flip-delay);
   transition-property: transform;
   transition-timing-function: cubic-bezier(.16, 1, .3, 1);
-  will-change: transform;
 }
 
 .charFace,
@@ -33,10 +32,19 @@
 .root:hover .charInner,
 :global(a:hover) .root .charInner,
 :global(button:hover) .root .charInner {
+  will-change: transform;
   transform: translate3d(0, -100%, 0);
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .charInner { transition: none; will-change: auto; }
+
+  .root:hover .charInner,
+  :global(a:hover) .root .charInner,
+  :global(button:hover) .root .charInner { transform: none; }
+}
+
+@media (hover: none) {
   .charInner { transition: none; will-change: auto; }
 
   .root:hover .charInner,

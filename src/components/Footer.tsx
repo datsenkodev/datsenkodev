@@ -9,7 +9,7 @@ export function Footer() {
 			</p>
 			<p className='status'>
 				<span aria-hidden='true' />
-				{site.availability}
+				<strong>{site.availability}</strong>
 			</p>
 			<ScrollToTop className='footer-top' label='Back to top' suffix='↑' />
 		</footer>
