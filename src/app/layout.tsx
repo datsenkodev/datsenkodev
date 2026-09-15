@@ -3,6 +3,7 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 import { site } from "@data/site";
 import { PageLoader } from "@components/PageLoader";
+import { SiteAnalytics } from "@components/SiteAnalytics";
 
 const geist = Geist({ subsets: ["latin"], display: "swap", variable: "--font-geist" });
 
@@ -19,5 +20,5 @@ export const metadata: Metadata = {
 export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#f1efe9" };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en" className={geist.variable}><body><PageLoader />{children}</body></html>;
+  return <html lang="en" className={geist.variable}><body><PageLoader />{children}<SiteAnalytics /></body></html>;
 }

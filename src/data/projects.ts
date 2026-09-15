@@ -40,7 +40,7 @@ export const projects: Project[] = [
 			'A full freelance marketplace platform connecting clients and freelancers through project discovery, task management, communication, billing, and workflow management. I worked across the product experience, building responsive interfaces and interactive flows for project browsing, task execution, profiles, finances, notifications, and proof-of-work submission.',
 		year: '2025',
 		category: 'Marketplace · Frontend',
-		stack: ['Next.js', 'Tailwind', 'SCSS'],
+		stack: ['JS', 'Tailwind', 'SCSS'],
 		image: toTheMoonImage,
 		imageAlt: 'To The Moon freelance marketplace interface',
 		coverImage: toTheMoonCover,

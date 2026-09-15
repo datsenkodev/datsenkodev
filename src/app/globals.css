@@ -19,7 +19,6 @@
 }
 html {
 	scroll-behavior: smooth;
-	scroll-padding-top: 5rem;
 	background: var(--bg);
 }
 body {
@@ -76,12 +75,22 @@ summary:focus-visible {
 	animation: loader-text-exit 350ms ease 500ms both;
 }
 @keyframes loader-exit {
-	from { transform: translate3d(0, 0, 0); }
-	to { transform: translate3d(0, -100%, 0); }
+	from {
+		transform: translate3d(0, 0, 0);
+	}
+	to {
+		transform: translate3d(0, -100%, 0);
+	}
 }
 @keyframes loader-text-exit {
-	from { opacity: 1; transform: translateY(0); }
-	to { opacity: 0; transform: translateY(-12px); }
+	from {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	to {
+		opacity: 0;
+		transform: translateY(-12px);
+	}
 }
 
 .site-header {
@@ -231,14 +240,13 @@ h2 em {
 
 .section {
 	width: 100%;
-	padding: var(--section) var(--content-pad);
+	padding: clamp(2rem, 4vw, 4rem) var(--content-pad) var(--section);
 	border-bottom: 1px solid var(--line);
-	scroll-margin-top: 4.5rem;
 }
 .section-label {
 	display: grid;
 	grid-template-columns: 5rem 1fr;
-	margin-bottom: clamp(4rem, 8vw, 8rem);
+	margin: clamp(4rem, 8vw, 8rem) 0;
 	font-size: 0.72rem;
 	letter-spacing: 0.14em;
 	text-transform: uppercase;

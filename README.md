@@ -59,3 +59,9 @@ I have experience mentoring and teaching frontend development. Explaining techni
 This profile repository also contains my personal portfolio website, built with Next.js, React, and TypeScript.
 
 Open to selected projects and frontend opportunities where product quality, thoughtful UI, and strong engineering matter.
+
+### Analytics
+
+The deployed portfolio uses privacy-friendly Vercel Web Analytics for anonymous visitor and page-view statistics. Meaningful link and button interactions are recorded as an `Interaction` event containing only a short label and non-sensitive destination.
+
+Web Analytics must be enabled in the Vercel project dashboard. Page-view analytics is available on every plan; custom interaction events require Vercel Pro or Enterprise.
