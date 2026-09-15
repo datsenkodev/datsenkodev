@@ -21,7 +21,7 @@ export const site = {
 		{ label: 'GitHub', href: 'https://github.com/datsenkodev' },
 		{ label: 'LinkedIn', href: 'https://www.linkedin.com/in/datsenko-dmytro/' },
 		{ label: 'Telegram', href: 'https://t.me/datsenkodev' },
-		{ label: 'CV', href: '/cv.pdf' }
+		{ label: 'CV', href: '/Datsenko_Frontend_CV.pdf' }
 	],
 	seo: {
 		title: 'Datsenko Dmytro - Frontend / Product Engineer',
