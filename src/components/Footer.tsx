@@ -1,4 +1,5 @@
 import { site } from '@data/site'
+import { Arrow } from './Arrow'
 import { ScrollToTop } from './ScrollToTop'
 
 export function Footer() {
@@ -11,7 +12,7 @@ export function Footer() {
 				<span aria-hidden='true' />
 				<strong>{site.availability}</strong>
 			</p>
-			<ScrollToTop className='footer-top' label='Back to top' suffix='↑' />
+			<ScrollToTop className='footer-top' label='Back to top' suffix={<Arrow direction='up' />} />
 		</footer>
 	)
 }

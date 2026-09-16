@@ -1,12 +1,13 @@
 "use client";
 
+import type { ReactNode } from "react";
 import { FlipText } from "./FlipText";
 
 type ScrollToTopProps = {
   label: string;
   className?: string;
   ariaLabel?: string;
-  suffix?: string;
+  suffix?: ReactNode;
 };
 
 export function ScrollToTop({ label, className, ariaLabel, suffix }: ScrollToTopProps) {

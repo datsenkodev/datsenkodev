@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { site } from '@data/site'
+import { Arrow } from './Arrow'
 import { FlipText } from './FlipText'
 import { ScrollToTop } from './ScrollToTop'
 
@@ -88,7 +89,7 @@ export function Header() {
 				))}
 			</nav>
 			<a className='header-contact' href={`mailto:${site.email}`}>
-				<FlipText>Let&apos;s talk</FlipText> <span aria-hidden='true'>↗</span>
+				<FlipText>Let&apos;s talk</FlipText> <Arrow />
 			</a>
 			<button
 				ref={menuButtonRef}
@@ -115,14 +116,14 @@ export function Header() {
 						<a key={item.href} href={item.href} onClick={closeMenu}>
 							<span>0{index + 1}</span>
 							<FlipText>{item.label}</FlipText>
-							<span aria-hidden='true'>↘</span>
+							<Arrow direction='down-right' />
 						</a>
 					))}
 				</nav>
 				<div className='mobile-menu-footer'>
 					<p>{site.availability}</p>
 					<a href={`mailto:${site.email}`} onClick={closeMenu}>
-						<FlipText>{site.email}</FlipText> <span aria-hidden='true'>↗</span>
+						<FlipText>{site.email}</FlipText> <Arrow />
 					</a>
 				</div>
 			</div>

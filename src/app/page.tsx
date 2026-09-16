@@ -44,7 +44,7 @@ export default function Home() {
 						<p>{site.description}</p>
 						<a className='text-link' href='#work'>
 							<FlipText>Selected work</FlipText>{' '}
-							<span aria-hidden='true'>↓</span>
+							<Arrow direction='down' />
 						</a>
 						<p className='hero-index'>Portfolio / {new Date().getFullYear()}</p>
 					</div>

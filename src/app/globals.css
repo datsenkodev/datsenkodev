@@ -38,6 +38,17 @@ img {
 	display: block;
 	max-width: 100%;
 }
+.arrow-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 0;
+	vertical-align: -0.08em;
+}
+.arrow-icon svg {
+	display: block;
+	transform-origin: center;
+}
 button,
 a,
 summary {
