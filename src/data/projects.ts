@@ -53,7 +53,7 @@ export const projects: Project[] = [
 			'A bold digital agency website built from the ground up to bring a highly visual design system to life across responsive layouts, interactive sections, motion, and portfolio-driven content. I focused on translating the design into a performant, maintainable frontend while preserving the visual character and smooth user experience across devices.',
 		year: '2025',
 		category: 'Agency · Frontend',
-		stack: ['Next.js', 'Gulp', 'SCSS', 'GSAP'],
+		stack: ['JS', 'Gulp', 'SCSS', 'GSAP'],
 		image: gradientaImage,
 		imageAlt: 'Gradienta digital agency website preview',
 		coverImage: gradientaCover,
